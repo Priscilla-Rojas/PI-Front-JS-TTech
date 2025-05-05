@@ -1,0 +1,95 @@
+:root{
+  --principal: rgb(53, 163, 167);
+  --secundario: rgb(3, 110, 114);
+}
+
+*{
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+header{
+  width: 100vw;
+  min-height: 50px;
+  background-color: rgba(117, 213, 216, 0.549);
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header > img{
+  width: 40px;
+  height: 40px;
+}
+header > nav ul{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
+ul li{
+  margin: 5px;
+  list-style: none;
+}
+header > nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+footer{
+  width: 100%;
+  min-height: 50px;
+  background-color: rgba(117, 213, 216, 0.549);
+  /* overflow: hidden; */
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer > ul{
+  margin: 5px auto;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer > ul li{
+  margin: 5px;
+  list-style: none;
+}
+footer > ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+} 
+footer > ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+footer > ul li a img{
+  width: 30px;
+  height: 30px;
+  filter: grayscale(80%);
+}
+footer > ul li a img:hover{
+  filter: grayscale(0%);
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+}
