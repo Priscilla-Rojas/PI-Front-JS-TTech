@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <title>PR</title>
-  
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="shortcut icon" href="./assets/icons/book.png" type="image/x-icon">
+  <title>Reed</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="./assets/img/images.png" alt="Logo P">
+    <img src="./assets/icons/book.png" alt="book">
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#destacadas">Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <video controls>
+    <section class="banner" id="inicio">
+      <div class="container-banner">
+        <div class="text-banner">
+          <h1>Descubre novelas que no te dejaran escapar</h1>
+          <p>Sumérgete en un mundo de historias cautivadoras y personajes inolvidables. Transportate a mundos fascinantes y vive aventuras inolvidables.</p>
+          <a>Explorar Libro</a>  
+        </div>
+        <div class="container-img-banner">
+          <img src="./assets/gift/96506db33504347b1598dbf21d07d591.gif" alt="Libro">
+        </div>
+      </div>
+      <!-- <div>
+        <img src="./assets/img/banner.png" alt="Image book">
+      </div> -->
+
+    </section>
+    <!-- <section id="video">
+      <video controls preload="none" poster="./assets/img/preview.jpg">
         <source src="./assets/videos/tatoo.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video.
-          <track src="./assets/subtitle/tatoo.vtt" kind="subtitles" srclang="en" label="English" default>
+        <track src="./assets/subtitle/tatoo.vtt" kind="subtitles" srclang="en" label="English" default>
+        Tu navegador no soporta la reproducción de video.
       </video>
+    </section> -->
+    <section id="destacadas">
+      <h2>Nuestras novelas destacadas</h2>
+      <div class="container-cards_destacadas">
+        <article class="cards_destacadas">
+          <div class="container-img-card">
+            <img src="./assets/img/portada1.JPG" alt="Image book">
+          </div>
+          <div class="text-card">
+            <h2>La hija del rio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <a href="">Ver más</a>
+          </div>
+        </article>
+        <article class="cards_destacadas">
+          <div class="container-img-card">
+            <img src="./assets/img/portada2.JPG" alt="Image book">
+          </div>
+          <div class="text-card">
+            <h2>En la oscuridad</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <a href="">Ver más</a>
+          </div>
+        </article>
+        <article class="cards_destacadas">
+          <div class="container-img-card">
+            <img src="./assets/img/portada3.jpg" alt="Image book">
+          </div>
+          <div class="text-card">
+            <h2>El jardin Secreto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <a href="">Ver más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="reviews" >
+      <h2>Lo que dicen nuestros lectores</h2>
+      <div class="container-cards">
+        <div class="cards">
+          <p class="name">— Camila R. —</p>
+          <img class="quotes" src="./assets/icons/quotes.png" alt="Comillas">
+          <p>Una plataforma increíble para los amantes de la lectura. Encontré novelas que jamás imaginé leer y me atraparon desde la primera página. La experiencia digital es fluida y cómoda.</p>
+          <img class="closing-quotes" src="./assets/icons/quotes.png" alt="Comillas">
+        </div>
+        <div class="cards">
+          <p class="name">— Martín G. —</p>
+          <img class="quotes" src="./assets/icons/quotes.png" alt="Comillas">
+          <p>Perfecto para quienes no tienen tiempo de ir a librerías. Descargué mi primer libro en segundos y me encantó poder leer desde el celular en cualquier lugar.</p>
+          <img class="closing-quotes" src="./assets/icons/quotes.png" alt="Comillas">
+        </div>
+        <div class="cards">
+          <p class="name">— Lucía M. —</p>
+          <img class="quotes" src="./assets/icons/quotes.png" alt="Comillas">
+          <p>El catálogo es amplio y variado, ideal para explorar nuevos géneros. Las recomendaciones personalizadas fueron un gran acierto. ¡Sigan así!</p>
+          <img class="closing-quotes" src="./assets/icons/quotes.png" alt="Comillas">
+        </div>
+      </div>
     </section>
     <section class="form" id="contacto">
       <form 
@@ -52,14 +125,13 @@
         <input type="submit" value="Enviar">
       </form>
     </section>
-    
   </main>
   <footer>
     <ul>
-      <li><a href="https://buenosaires.gob.ar/educacion/agencia-de-habilidades-para-el-futuro/talento-tech"><img src="./assets/icons/talentoTech.png" alt="Telento Tech"></a></li>
-      <li><a href="https://github.com/Priscilla-Rojas"><img src="./assets/icons/github.png" alt="github"></a></li>
-      <li><a href="https://www.linkedin.com/in/priscilla-k-rojas/"><img src="./assets/icons/linkedin.png" alt="Linkedin"></a></li>
-      <li><a href="https://www.facebook.com/"><img src="./assets/icons/facebook.png" alt="facebook"></a></li>
+      <li><a href="https://buenosaires.gob.ar/educacion/agencia-de-habilidades-para-el-futuro/talento-tech" target="_blank"><img src="./assets/icons/talentoTech.png" alt="Telento Tech"></a></li>
+      <li><a href="https://github.com/Priscilla-Rojas" target="_blank"><img src="./assets/icons/github.png" alt="github"></a></li>
+      <li><a href="https://www.linkedin.com/in/priscilla-k-rojas/" target="_blank"><img src="./assets/icons/linkedin.png" alt="Linkedin"></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="./assets/icons/facebook.png" alt="facebook"></a></li>
       
     </ul>
   </footer>

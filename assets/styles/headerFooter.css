@@ -1,13 +1,18 @@
 :root{
-  --principal: rgb(53, 163, 167);
-  --secundario: rgb(3, 110, 114);
+  --lila: #EDE5F7;
+  --violet: #40365B;
+  --ligthLila: #FCF9FB;
+  --colorFont: #3F355B;
+  --title: "Ancizar Serif", serif;
+  --text: "Roboto", sans-serif;
 }
 
 *{
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: var(--text);
   font-weight: 300;
   font-style: normal;
+  color: var(--colorFont);
 }
 body{
   width: 100%;
@@ -18,12 +23,19 @@ body{
   flex-flow: column nowrap;
   justify-content: space-between;
   overflow-x: hidden;
+  background-color: var(--ligthLila);
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--title);
+  font-weight: 400;
+  color: var(--colorFont);
 }
 header{
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 50px;
-  background-color: rgba(117, 213, 216, 0.549);
+  background-color: var(--violet);
   overflow: hidden;
+  padding: 0 10px;
 
   display: flex;
   flex-flow: row wrap;
@@ -31,7 +43,7 @@ header{
   align-items: center;
 }
 header > img{
-  width: 40px;
+  width: 70px;
   height: 40px;
 }
 header > nav ul{
@@ -46,14 +58,14 @@ ul li{
 }
 header > nav ul li a{
   text-decoration: none;
-  color: black;
+  color: var(--ligthLila);
   font-size: 12px;
 }
 
 footer{
   width: 100%;
   min-height: 50px;
-  background-color: rgba(117, 213, 216, 0.549);
+  background-color: var(--violet);
   /* overflow: hidden; */
 
   display: flex;
@@ -62,7 +74,7 @@ footer{
   align-items: center;
 }
 footer > ul{
-  margin: 5px auto;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
@@ -79,17 +91,34 @@ footer > ul li a{
   font-size: 12px;
 } 
 footer > ul li a:hover{
-  color: white;
+  color: var(--ligthLila);
   text-decoration: underline;
 }
 footer > ul li a img{
   width: 30px;
   height: 30px;
-  filter: grayscale(80%);
+  filter: hue-rotate(27deg);
 }
 footer > ul li a img:hover{
-  filter: grayscale(0%);
+  filter: hue-rotate(0deg);
   width: 35px;
   height: 35px;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 290px){
+  header {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  } 
+  header > nav ul{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
+
