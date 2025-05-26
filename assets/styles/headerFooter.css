@@ -41,11 +41,16 @@ header{
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header > img{
-  width: 70px;
-  height: 40px;
+  width: 50px;
+  height: 30px;
+  margin: 5px;
 }
+
 header > nav ul{
   display: flex;
   flex-flow: row nowrap;
@@ -59,7 +64,11 @@ ul li{
 header > nav ul li a{
   text-decoration: none;
   color: var(--ligthLila);
-  font-size: 12px;
+  font-size: 1.2rem;
+}
+header > nav ul li a:hover{
+  color: var(--lila);
+  text-decoration: underline;
 }
 
 footer{
